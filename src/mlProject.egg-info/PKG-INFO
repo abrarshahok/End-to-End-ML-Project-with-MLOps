@@ -5,7 +5,18 @@ Summary: A small python package for ml app
 Home-page: https://github.com/abrar/End-to-end-ML-Project-with-MLFlow
 Author: abrar
 Author-email: abrarahmedshahok20@gmail.com
-License: UNKNOWN
 Project-URL: Bug Tracker, https://github.com/abrar/End-to-end-ML-Project-with-MLFlow/issues
-Platform: UNKNOWN
 License-File: LICENSE
+
+# End to End ML Project with MLOps
+
+## Workflows
+
+1. Update config.yaml
+2. Update schema.yaml
+3. Update params.yaml
+4. Update the entity
+5. Update the configuration manager in src config
+6. Update the components
+7. Update the pipeline
+8. Update the main.py

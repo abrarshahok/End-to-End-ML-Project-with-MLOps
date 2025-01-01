@@ -2,3 +2,307 @@
 [2024-12-30 03:27:20,844: INFO: main: Welcome to our custom logging]
 [2025-01-01 18:54:25,071: INFO: main: Welcome to our custom logging]
 [2025-01-01 18:54:31,942: INFO: main: Welcome to our custom logging]
+[2025-01-01 21:05:23,769: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-01 21:05:23,777: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 21:05:23,778: ERROR: 1378366614: Error in data ingestion pipeline: yaml file is empty]
+[2025-01-01 21:07:00,326: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-01 21:07:00,391: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 21:07:00,394: ERROR: 1378366614: Error in data ingestion pipeline: yaml file is empty]
+[2025-01-01 21:07:40,139: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-01 21:07:40,188: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 21:07:40,197: ERROR: 4281326043: Error in data ingestion pipeline: yaml file is empty]
+[2025-01-01 21:10:12,342: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-01 21:10:12,370: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 21:10:12,379: ERROR: 4281326043: Error in data ingestion pipeline: yaml file is empty]
+[2025-01-01 21:10:24,279: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-01 21:10:24,301: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 21:10:24,313: ERROR: 4281326043: Error in data ingestion pipeline: yaml file is empty]
+[2025-01-01 21:10:57,622: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-01 21:10:57,660: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 21:10:57,663: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-01-01 21:10:57,668: INFO: common: created directory at: artifacts]
+[2025-01-01 21:10:57,697: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-01 21:11:00,621: INFO: 596605324: artifacts/data_ingestion/data.zip downloaded!
+Info: Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: A823:EA936:38E2B1C:3DAB5B9:67756913
+Accept-Ranges: bytes
+Date: Wed, 01 Jan 2025 16:11:00 GMT
+Via: 1.1 varnish
+X-Served-By: cache-fjr990032-FJR
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1735747859.293793,VS0,VE1352
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 36be4bff2b625fc87d02cf6819519ad4c35ba406
+Expires: Wed, 01 Jan 2025 16:16:00 GMT
+Source-Age: 0
+
+]
+[2025-01-01 21:11:00,626: INFO: 596605324: Data extracted at artifacts/data_ingestion]
+[2025-01-01 21:11:00,628: INFO: 4281326043: Data Ingestion pipeline completed successfully!]
+[2025-01-01 22:03:21,631: INFO: main: >>>>>> Starting Data Ingestion Stage <<<<<<]
+[2025-01-01 22:03:21,634: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-01 22:03:21,635: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 22:03:21,636: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-01-01 22:03:21,636: INFO: common: created directory at: artifacts]
+[2025-01-01 22:03:21,638: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-01 22:03:21,690: ERROR: main: Stage Data Ingestion Stage failed with error: <urlopen error [Errno 8] nodename nor servname provided, or not known>]
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 1344, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1336, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1382, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1331, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1091, in _send_output
+    self.send(msg)
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1035, in send
+    self.connect()
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1470, in connect
+    super().connect()
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1001, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 976, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/abrar/ML-DS-Projects/Practice/End-to-End-ML-Project-with-MLOps/main.py", line 8, in <module>
+    data_ingestion.main()
+  File "/Users/abrar/ML-DS-Projects/Practice/End-to-End-ML-Project-with-MLOps/src/mlProject/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_data()
+  File "/Users/abrar/ML-DS-Projects/Practice/End-to-End-ML-Project-with-MLOps/src/mlProject/components/data_ingestion.py", line 19, in download_data
+    filename, headers = request.urlretrieve(
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 240, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+                            ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 1392, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 1347, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+[2025-01-01 22:04:26,561: INFO: main: >>>>>> Starting Data Ingestion Stage <<<<<<]
+[2025-01-01 22:04:26,563: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-01 22:04:26,563: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 22:04:26,564: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-01-01 22:04:26,564: INFO: common: created directory at: artifacts]
+[2025-01-01 22:04:26,564: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-01 22:04:28,884: INFO: data_ingestion: artifacts/data_ingestion/data.zip downloaded!
+Info: Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 687B:53580:677C47D:6BF2152:6775759D
+Accept-Ranges: bytes
+Date: Wed, 01 Jan 2025 17:04:29 GMT
+Via: 1.1 varnish
+X-Served-By: cache-sin-wsss1830030-SIN
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1735751069.386445,VS0,VE331
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 9650725695e70c6873275d866f1cb744fe6f4b97
+Expires: Wed, 01 Jan 2025 17:09:29 GMT
+Source-Age: 0
+
+]
+[2025-01-01 22:04:28,890: INFO: data_ingestion: Data extracted at artifacts/data_ingestion]
+[2025-01-01 22:04:28,891: INFO: main: >>>>>> Finished Data Ingestion Stage <<<<<<]
+[2025-01-01 22:05:14,592: INFO: main: ========================================]
+[2025-01-01 22:05:14,592: INFO: main: >>>>>> Starting Data Ingestion Stage <<<<<<]
+[2025-01-01 22:05:14,593: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-01 22:05:14,593: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 22:05:14,594: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-01-01 22:05:14,594: INFO: common: created directory at: artifacts]
+[2025-01-01 22:05:14,594: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-01 22:05:14,594: ERROR: main: Stage Data Ingestion Stage failed with error: cannot access local variable 'filename' where it is not associated with a value]
+Traceback (most recent call last):
+  File "/Users/abrar/ML-DS-Projects/Practice/End-to-End-ML-Project-with-MLOps/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/Users/abrar/ML-DS-Projects/Practice/End-to-End-ML-Project-with-MLOps/src/mlProject/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_data()
+  File "/Users/abrar/ML-DS-Projects/Practice/End-to-End-ML-Project-with-MLOps/src/mlProject/components/data_ingestion.py", line 24, in download_data
+    logger.info(f"Data already exists at {self.config.local_data_file} with size {get_size(filename)}")
+                                                                                           ^^^^^^^^
+UnboundLocalError: cannot access local variable 'filename' where it is not associated with a value
+[2025-01-01 22:06:34,036: INFO: main: ========================================]
+[2025-01-01 22:06:34,036: INFO: main: >>>>>> Starting Data Ingestion Stage <<<<<<]
+[2025-01-01 22:06:34,037: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-01 22:06:34,037: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 22:06:34,038: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-01-01 22:06:34,038: INFO: common: created directory at: artifacts]
+[2025-01-01 22:06:34,038: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-01 22:06:34,038: ERROR: main: Stage Data Ingestion Stage failed with error: cannot access local variable 'filename' where it is not associated with a value]
+Traceback (most recent call last):
+  File "/Users/abrar/ML-DS-Projects/Practice/End-to-End-ML-Project-with-MLOps/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/Users/abrar/ML-DS-Projects/Practice/End-to-End-ML-Project-with-MLOps/src/mlProject/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_data()
+  File "/Users/abrar/ML-DS-Projects/Practice/End-to-End-ML-Project-with-MLOps/src/mlProject/components/data_ingestion.py", line 24, in download_data
+    logger.info(f"Data already exists at {self.config.local_data_file} with size {get_size(filename)}")
+                                                                                           ^^^^^^^^
+UnboundLocalError: cannot access local variable 'filename' where it is not associated with a value
+[2025-01-01 22:07:51,493: INFO: main: ========================================]
+[2025-01-01 22:07:51,494: INFO: main: >>>>>> Starting Data Ingestion Stage <<<<<<]
+[2025-01-01 22:07:51,496: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-01 22:07:51,498: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 22:07:51,500: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-01-01 22:07:51,501: INFO: common: created directory at: artifacts]
+[2025-01-01 22:07:51,501: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-01 22:07:51,502: ERROR: main: Stage Data Ingestion Stage failed with error: cannot access local variable 'filename' where it is not associated with a value]
+Traceback (most recent call last):
+  File "/Users/abrar/ML-DS-Projects/Practice/End-to-End-ML-Project-with-MLOps/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/Users/abrar/ML-DS-Projects/Practice/End-to-End-ML-Project-with-MLOps/src/mlProject/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_data()
+  File "/Users/abrar/ML-DS-Projects/Practice/End-to-End-ML-Project-with-MLOps/src/mlProject/components/data_ingestion.py", line 24, in download_data
+    logger.info(f"Data already exists at {self.config.local_data_file} with size {get_size(filename)}")
+                                                                                           ^^^^^^^^
+UnboundLocalError: cannot access local variable 'filename' where it is not associated with a value
+[2025-01-01 22:08:15,646: INFO: main: ========================================]
+[2025-01-01 22:08:15,646: INFO: main: >>>>>> Starting Data Ingestion Stage <<<<<<]
+[2025-01-01 22:08:15,647: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-01 22:08:15,647: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 22:08:15,648: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-01-01 22:08:15,648: INFO: common: created directory at: artifacts]
+[2025-01-01 22:08:15,648: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-01 22:08:15,648: ERROR: main: Stage Data Ingestion Stage failed with error: cannot access local variable 'filename' where it is not associated with a value]
+Traceback (most recent call last):
+  File "/Users/abrar/ML-DS-Projects/Practice/End-to-End-ML-Project-with-MLOps/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/Users/abrar/ML-DS-Projects/Practice/End-to-End-ML-Project-with-MLOps/src/mlProject/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_data()
+  File "/Users/abrar/ML-DS-Projects/Practice/End-to-End-ML-Project-with-MLOps/src/mlProject/components/data_ingestion.py", line 24, in download_data
+    logger.info(f"Data already exists at {self.config.local_data_file} with size {get_size(filename)}")
+                                                                                           ^^^^^^^^
+UnboundLocalError: cannot access local variable 'filename' where it is not associated with a value
+[2025-01-01 22:08:52,162: INFO: main: ========================================]
+[2025-01-01 22:08:52,162: INFO: main: >>>>>> Starting Data Ingestion Stage <<<<<<]
+[2025-01-01 22:08:52,163: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-01 22:08:52,163: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 22:08:52,164: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-01-01 22:08:52,164: INFO: common: created directory at: artifacts]
+[2025-01-01 22:08:52,164: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-01 22:08:52,164: ERROR: main: Stage Data Ingestion Stage failed with error: Argument path of type <class 'str'> to <function get_size at 0x108ea4e00> does not match annotation type <class 'pathlib.Path'>]
+Traceback (most recent call last):
+  File "/Users/abrar/ML-DS-Projects/Practice/End-to-End-ML-Project-with-MLOps/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/Users/abrar/ML-DS-Projects/Practice/End-to-End-ML-Project-with-MLOps/src/mlProject/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_data()
+  File "/Users/abrar/ML-DS-Projects/Practice/End-to-End-ML-Project-with-MLOps/src/mlProject/components/data_ingestion.py", line 24, in download_data
+    logger.info(f"Data already exists at {self.config.local_data_file} with size {get_size(self.config.local_data_file)}")
+                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/ensure/main.py", line 870, in __call__
+    raise EnsureError(msg.format(arg=arg, f=self.f, t=templ, valt=type(value)))
+ensure.main.EnsureError: Argument path of type <class 'str'> to <function get_size at 0x108ea4e00> does not match annotation type <class 'pathlib.Path'>
+[2025-01-01 22:09:23,823: INFO: main: ========================================]
+[2025-01-01 22:09:23,824: INFO: main: >>>>>> Starting Data Ingestion Stage <<<<<<]
+[2025-01-01 22:09:23,824: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-01 22:09:23,825: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 22:09:23,825: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-01-01 22:09:23,826: INFO: common: created directory at: artifacts]
+[2025-01-01 22:09:23,826: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-01 22:09:23,826: INFO: data_ingestion: Data already exists at artifacts/data_ingestion/data.zip with size ~ 23 KB]
+[2025-01-01 22:09:23,828: INFO: data_ingestion: Data extracted at artifacts/data_ingestion]
+[2025-01-01 22:09:23,828: INFO: main: >>>>>> Finished Data Ingestion Stage <<<<<<]
+[2025-01-01 22:09:23,828: INFO: main: ========================================]
+[2025-01-01 22:11:32,949: INFO: main: ========================================]
+[2025-01-01 22:11:32,949: INFO: main: >>>>>> Starting Data Ingestion Stage <<<<<<]
+[2025-01-01 22:11:32,950: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-01 22:11:32,950: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 22:11:32,950: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-01-01 22:11:32,951: INFO: common: created directory at: artifacts]
+[2025-01-01 22:11:32,951: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-01 22:11:32,951: INFO: data_ingestion: Data already exists at artifacts/data_ingestion/data.zip with size ~ 23 KB]
+[2025-01-01 22:11:32,952: INFO: data_ingestion: Data extracted at artifacts/data_ingestion]
+[2025-01-01 22:11:32,953: INFO: main: >>>>>> Finished Data Ingestion Stage <<<<<<]
+[2025-01-01 22:11:32,953: INFO: main: ========================================]
+[2025-01-01 22:13:49,601: INFO: main: ========================================]
+[2025-01-01 22:13:49,601: INFO: main: >>>>>> Starting Data Ingestion Stage <<<<<<]
+[2025-01-01 22:13:49,602: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-01 22:13:49,602: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 22:13:49,603: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-01-01 22:13:49,603: INFO: common: created directory at: artifacts]
+[2025-01-01 22:13:49,603: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-01 22:13:49,603: INFO: data_ingestion: Data already exists at artifacts/data_ingestion/data.zip with size ~ 23 KB]
+[2025-01-01 22:13:49,603: INFO: main: >>>>>> Finished Data Ingestion Stage <<<<<<]
+[2025-01-01 22:13:49,603: INFO: main: ========================================]
+[2025-01-01 22:14:01,768: INFO: main: ========================================]
+[2025-01-01 22:14:01,768: INFO: main: >>>>>> Starting Data Ingestion Stage <<<<<<]
+[2025-01-01 22:14:01,769: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-01 22:14:01,770: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-01 22:14:01,770: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-01-01 22:14:01,770: INFO: common: created directory at: artifacts]
+[2025-01-01 22:14:01,771: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-01 22:14:04,766: INFO: data_ingestion: artifacts/data_ingestion/data.zip downloaded!
+Info: Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 687B:53580:677C47D:6BF2152:6775759D
+Accept-Ranges: bytes
+Date: Wed, 01 Jan 2025 17:14:05 GMT
+Via: 1.1 varnish
+X-Served-By: cache-sin-wsss1830074-SIN
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1735751645.724462,VS0,VE383
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: b539247d5551bcbd1aa08a85619518e789b209a7
+Expires: Wed, 01 Jan 2025 17:19:05 GMT
+Source-Age: 0
+
+]
+[2025-01-01 22:14:04,768: INFO: data_ingestion: Data extracted at artifacts/data_ingestion]
+[2025-01-01 22:14:04,768: INFO: main: >>>>>> Finished Data Ingestion Stage <<<<<<]
+[2025-01-01 22:14:04,768: INFO: main: ========================================]
