@@ -11,26 +11,15 @@ class DataIngestion:
         self.config = config
     
     def download_data(self):
-        """
-        
-        Downloads the data from the source URL if it doesn't exist
-
-        """
         if not os.path.exists(self.config.local_data_file):
             filename, headers = request.urlretrieve(
                 self.config.source_URL, 
                 self.config.local_data_file)
             logger.info(f"{filename} downloaded!\nInfo: {headers}")
-            return True
         else:
             logger.info(f"Data already exists at {self.config.local_data_file} with size {get_size(Path(self.config.local_data_file))}")
-            return False
     
     def extract_zip_file(self):
-        """
-        Extracts the zip file to the specified directory
-
-        """
         unzip_dir = self.config.unzip_dir
         os.makedirs(unzip_dir, exist_ok=True)
         with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:

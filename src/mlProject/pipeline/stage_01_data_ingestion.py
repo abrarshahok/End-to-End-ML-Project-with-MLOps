@@ -12,9 +12,8 @@ class DataIngestionPipeline:
         config_mgr = ConfigurationManager()
         data_ingestion_config = config_mgr.get_data_ingestion_config()
         data_ingestion = DataIngestion(config=data_ingestion_config)
-        shouldExtract =  data_ingestion.download_data()
-        if shouldExtract:
-            data_ingestion.extract_zip_file()
+        data_ingestion.download_data()
+        data_ingestion.extract_zip_file()
 
 if __name__ == '__main__':
     try:
