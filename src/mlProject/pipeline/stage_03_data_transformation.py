@@ -10,7 +10,7 @@ class DataTransformationPipeline:
         pass
 
     def main(self):
-        with open(Path('artifacts/data_validation/status.txt','r')) as f:
+        with open(Path('artifacts/data_validation/status.txt'), 'r') as f:
             status = f.read().split(' ')[-1]
 
         if status == 'True':
