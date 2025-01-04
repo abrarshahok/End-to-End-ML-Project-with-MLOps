@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/abrar/ML-DS-Projects/Practice/End-to-End-ML-Project-with-MLOps/mlruns/822029461645566427/6dbcf845c26540b688ef9ef6ea5daca7/artifacts
+end_time: 1735948209346
+entry_point_name: ''
+experiment_id: '822029461645566427'
+lifecycle_stage: active
+run_id: 6dbcf845c26540b688ef9ef6ea5daca7
+run_name: victorious-hare-32
+run_uuid: 6dbcf845c26540b688ef9ef6ea5daca7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735948204919
+status: 3
+tags: []
+user_id: abrar
