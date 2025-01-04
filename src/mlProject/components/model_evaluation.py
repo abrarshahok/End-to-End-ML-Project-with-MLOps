@@ -24,7 +24,7 @@ class ModelEvaluation:
 
     def log_into_mlflow(self):
         dagshub.init(repo_owner='abrarshahok', repo_name='End-to-End-ML-Project-with-MLOps', mlflow=True)
-        
+
         experiment = mlflow.get_experiment_by_name(self.config.experiment_name)
         if experiment is None:
             mlflow.create_experiment(self.config.experiment_name)
@@ -36,13 +36,7 @@ class ModelEvaluation:
         test_x = test_data.drop(self.config.target_column, axis=1)
         test_y = test_data[self.config.target_column]
         
-        # Create model signature
-        input_schema = Schema([
-            ColSpec("double", col) for col in test_x.columns
-        ])
-        output_schema = Schema([ColSpec("double", self.config.target_column)])
-        signature = ModelSignature(inputs=input_schema, outputs=output_schema)
-        input_example = test_x.head(1)
+        signature, input_example = self._get_model_signature_and_input_example(test_x)
 
         tracking_url_type_store = urlparse(mlflow.get_registry_uri()).scheme
 
@@ -76,3 +70,11 @@ class ModelEvaluation:
                     signature=signature,
                     input_example=input_example)
 
+    def _get_model_signature_and_input_example(self, test_x):
+        input_schema = Schema([
+            ColSpec("double", col) for col in test_x.columns
+        ])
+        output_schema = Schema([ColSpec("long", self.config.target_column)])
+        signature = ModelSignature(inputs=input_schema, outputs=output_schema)
+        input_example = test_x.head(1)
+        return signature, input_example
