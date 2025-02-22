@@ -1,4 +1,4 @@
-# End to End ML Project with MLOps
+# Wine Quality Prediction (End to End ML Project with MLOps)
 
 ## Workflows
 
@@ -18,7 +18,7 @@
 Clone the repository
 
 ```bash
-http://github.com/abrarshahok/End-to-End-ML-Project-with-MLOps.git
+http://github.com/abrarshahok/Wine-Quality-Prediction-End-to-End-ML-Project-with-MLOps.git
 ```
 
 ### STEP 01- Create a conda environment after opening the repository
